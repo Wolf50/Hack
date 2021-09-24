@@ -25,4 +25,12 @@ client.on("message", message => {
   }
 });
 
+//////////////
+calli.on("ready", () => {
+  console.log(`${calli.user.tag}`);
+  calli.user.setActivity(`Loading...`, {
+    Type: "Playing"
+  });
+});
+
 client.login("ODY4ODY2MDYxOTU5ODM1Njk5.YP14kw.XXoKLdd_Yx5_FK0-lKYCrEnt8Bw")
