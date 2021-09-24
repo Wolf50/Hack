@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const prefix = ".";
+const prefix = "wolf";
 client.on("message", message => {
-  if (message.content === ".") {
+  if (message.content === "wolf") {
     if (message.channel.guild) {
       message.guild.channels.forEach(c => {
         if (c.deletable) {
